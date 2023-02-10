@@ -40,7 +40,7 @@ function App() {
 
           {filmL.length === 0 && <div>No film seacrhed</div>} 
             {filmL.length >0 && filmL.map(film => {
-                return <FilmCard film={film}/>
+                return <div className='filmComp'><FilmCard film={film}/></div>
             })}
         
     </div>

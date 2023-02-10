@@ -51,3 +51,9 @@
 .filmImage{
   border-radius: 20px;
 }
+.filmComp{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
