@@ -36,13 +36,12 @@ function App() {
     <div className='searchModule'>
     <p className='lupa'>🔎 </p><Input className="searchBar" value={undefined} type="text" onChange={searchFilms} />
     </div>
-        
-
+    <div className='filmComp'>
           {filmL.length === 0 && <div>No film seacrhed</div>} 
             {filmL.length >0 && filmL.map(film => {
-                return <div className='filmComp'><FilmCard film={film}/></div>
+                return <FilmCard film={film}/>
             })}
-        
+    </div>
     </div>
   );
 }
